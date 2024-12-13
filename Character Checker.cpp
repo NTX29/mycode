@@ -1,14 +1,11 @@
 #include<iostream>
-#include<string>
-#include<conio.h>
-
 using namespace std;
 
 int main(){
-	char letter[10];
+	char letter[10000];
 	cin >> letter;
 	
-	for(int i = 0; i < 10; i++){
+	for(int i = 0; i < 10000; i++){
 		for(int j = 0; j < i+1; j++){
 			if(letter[i] >= 'A' && letter[i] <= 'Z'){
 				if(letter[i+1] >= 'A' && letter[i+1] <= 'Z'){
@@ -35,5 +32,4 @@ int main(){
 	}
 	
 	
-	return 0;
 }
